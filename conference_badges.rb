@@ -29,23 +29,17 @@ def assign_rooms(array)
 end
 
 
-
-
-
-
-
-
-def badge_maker ("name")
-  return "Hello, my name is #{name}."
- end
-
-
-badge_maker ("Arel")
-
-batch_badge_creator = ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
-batch_badge_creator.each do |name|
-   return "Hello, my name is #{name}."
-  end
+def printer(array)
+  batch_badge_creator(array).each do |id|
+    puts id
+  end 
   
-assign_rooms= [1,2,3,4,5,6,7]
-assign_rooms.each do 
+  assign_rooms(array).each do |id|
+    puts id 
+  end
+end 
+
+
+
+
+
